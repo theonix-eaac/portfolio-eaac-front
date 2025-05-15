@@ -1,0 +1,16 @@
+:root {
+  --forest-green-color: #2a402d;
+  --olive-green-color: #8a9968;
+  --brush-green-color: #374f34;
+  --moss-green-color: #6c8354;
+  --earth-green-color: #5c734e;
+  --black-warm: #121212;
+
+  /*Text*/
+  --text-light: #f5f5f5;
+  --text-soft-gray: #dadada;
+  --text-ivory: #f8f8f3;
+  --text-dark: #222222;
+  --text-rich-black: #1a1a1a;
+  --text-beige: #eae7dc;
+}

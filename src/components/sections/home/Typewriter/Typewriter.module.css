@@ -1,0 +1,110 @@
+.container {
+  width: 100%;
+  height: 90vh;
+  background: radial-gradient(
+    ellipse at center,
+    var(--black-warm),
+    #0a0a0a 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fondo con pulsaciones etéreas */
+.pulseAura {
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(
+    circle,
+    var(--moss-green-color) 0%,
+    transparent 70%
+  );
+  animation: pulse 8s ease-in-out infinite;
+  opacity: 0.2;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+/* Partículas flotando */
+.particleOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#8a996855 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: drift 40s linear infinite;
+  opacity: 0.08;
+  z-index: 1;
+}
+
+/* Texto */
+.text {
+  color: var(--text-light);
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+/* Cada letra */
+.char {
+  transition: transform 0.3s ease;
+}
+.char:hover {
+  transform: scale(1.15);
+}
+
+/* Cursor */
+.cursor {
+  animation: blink 1s steps(2, start) infinite;
+}
+
+/* Fuentes */
+.inter {
+  font-family: var(--font-inter);
+}
+.plexMono {
+  font-family: var(--font-plex-mono);
+}
+.playfair {
+  font-family: var(--font-playfair);
+}
+
+/* Animaciones */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.3;
+  }
+}
+
+@keyframes drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 1000px;
+  }
+}

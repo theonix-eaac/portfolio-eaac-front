@@ -1,17 +1,8 @@
-"use client";
+import Link from "next/link"
+import styles from "./InfoProfile.module.css"
 
-import Link from "next/link";
-import styles from "./Profile.module.css";
-
-export default function Profile() {
-  return (
-    <div className={styles.wrapper}>
-      <div className={styles.card}>
-        <img
-          src="/Profile/Perfil.webp"
-          alt="Esaul Alfaro"
-          className={styles.avatar}
-        />
+const InfoProfile = ()=>{
+    return(
         <div className={styles.info}>
           <h1 className={styles.name}>Esaul Alejandro Alfaro Canales</h1>
           <p className={styles.role}>Ingeniero en Nanotecnología</p>
@@ -24,7 +15,7 @@ export default function Profile() {
             Cédula: 14501319
           </Link>
         </div>
-      </div>
-    </div>
-  );
+    )
 }
+
+export default InfoProfile

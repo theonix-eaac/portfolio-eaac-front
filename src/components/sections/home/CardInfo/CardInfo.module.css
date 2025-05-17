@@ -1,0 +1,176 @@
+.cardContainer {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+  
+  .cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+  }
+  
+  .cardContainer:hover .cardInner {
+    transform: rotateY(180deg);
+  }
+  
+  .cardFront, .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(92, 115, 78, 0.08);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardFront {
+    z-index: 2;
+    background: radial-gradient(circle at center, rgba(92, 115, 78, 0.2), transparent 50%);
+    animation: wavePulse 6s ease-in-out infinite;
+  }
+  
+  .cardBack {
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 180px;
+    aspect-ratio: 1;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(92, 115, 78, 0.2);
+    animation: floatWave 3s ease-in-out infinite alternate;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--text-beige);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    color: var(--text-soft-gray);
+    margin-bottom: 12px;
+    line-height: 1.5;
+    margin: 2cqh;
+  }
+  
+
+  .link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+    background: radial-gradient(circle at center, var(--moss-green-color), var(--earth-green-color));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.4s ease, background-position 4s ease;
+    box-shadow:
+      0 0 8px rgba(92, 115, 78, 0.3),
+      0 0 24px rgba(108, 131, 84, 0.1) inset;
+    background-size: 200%;
+  }
+  
+  .link::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(108, 131, 84, 0.15), transparent 70%);
+    animation: waveAura 6s ease-in-out infinite;
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  .link:hover {
+    transform: scale(1.06) rotate(-0.3deg);
+    background-position: 100% 100%;
+    box-shadow:
+      0 0 16px rgba(122, 255, 193, 0.4),
+      0 0 40px rgba(92, 115, 78, 0.25) inset;
+  }
+  
+  .link:active {
+    transform: scale(0.98);
+  }
+  
+  @keyframes waveAura {
+    0% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.3) rotate(10deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  
+  
+  /* Animaciones suaves */
+  @keyframes wavePulse {
+    0% {
+      background-size: 100%;
+    }
+    100% {
+      background-size: 120%;
+    }
+  }
+  
+  @keyframes floatWave {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      transform: translateY(-6px) scale(1.03);
+    }
+  }
+  
+  /* 📱 Mobile-friendly tweaks */
+  @media (max-width: 600px) {
+    .cardFront, .cardBack {
+      padding: 12px;
+    }
+  
+    .title {
+      font-size: 1.1rem;
+    }
+  
+    .description {
+      font-size: 0.85rem;
+    }
+  
+    .link {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+    }
+  
+    .image {
+      max-width: 120px;
+    }
+  }
+  

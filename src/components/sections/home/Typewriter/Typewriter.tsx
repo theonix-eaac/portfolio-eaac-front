@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Profile from "../Profile/Profile";
 import styles from "./Typewriter.module.css";
 
 const messages = [
@@ -61,7 +60,11 @@ export default function Typewriter() {
           <span className={styles.cursor}>|</span>
         </p>
       ) : (
-        <Profile />
+        <h2 className={styles.textFixed}>
+        ¡Hey! Qué gusto tenerte por aquí.
+        <span>Ojalá conectemos, colaboremos o incluso construyamos algo grande juntos.</span>
+      </h2>
+      
       )}
     </div>
   );

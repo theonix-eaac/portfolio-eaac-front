@@ -52,7 +52,6 @@ export default function Typewriter() {
   return (
     <div className={styles.container}>
       <div className={styles.pulseAura} />
-      <div className={styles.particleOverlay} />
 
       {!finished ? (
         <p className={styles.text}>
@@ -61,10 +60,12 @@ export default function Typewriter() {
         </p>
       ) : (
         <h2 className={styles.textFixed}>
-        ¡Hey! Qué gusto tenerte por aquí.
-        <span>Ojalá conectemos, colaboremos o incluso construyamos algo grande juntos.</span>
-      </h2>
-      
+          ¡Qué gusto tenerte por aquí!
+          <span>
+            Ojalá conectemos, colaboremos o incluso construyamos algo grande
+            juntos.
+          </span>
+        </h2>
       )}
     </div>
   );

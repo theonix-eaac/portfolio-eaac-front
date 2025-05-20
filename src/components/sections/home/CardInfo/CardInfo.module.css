@@ -1,7 +1,7 @@
 .cardContainer {
   perspective: 1000px;
   width: 100%;
-  height: 300px;
+  height: 270px;
 }
 
 .cardInner {
@@ -23,12 +23,13 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 
 /* Usamos tonos de fondo suaves y contrastes con base en las variables */
@@ -47,9 +48,9 @@
 /* Imagen */
 .image {
   width: 100%;
-  height: 200px;
+  height: 230px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px 10px 0px 0px;
   margin-bottom: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -73,17 +74,37 @@
 }
 
 /* Botón / Enlace */
+@keyframes softPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 10px 2px rgba(100, 200, 150, 0.3);
+  }
+}
+
 .link {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   background-color: var(--moss-green-color);
   color: var(--text-light);
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  font-weight: 600;
+  position: relative;
+  animation: softPulse 3s ease-in-out infinite;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
 }
 
 .link:hover {
   background-color: var(--olive-green-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.link:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

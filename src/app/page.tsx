@@ -1,4 +1,4 @@
-import BentoContainer from "@/components/sections/BentoContainer/BentoContainer";
+import BentoContainer from "@/components/sections/home/BentoContainer/BentoContainer";
 
 export default function Home() {
   return (

@@ -22,19 +22,41 @@
   letter-spacing: 0.5px;
 }
 
+.mailLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mailIcon {
+  display: flex;
+  align-items: center;
+}
+
 .icon {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 5rem;
   color: var(--moss-green-color);
+  animation: float 3s ease-in-out infinite;
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }
 
 .icon:hover {
-  transform: scale(1.15) rotate(3deg);
+  transform: scale(1.15) rotate(5deg);
   color: var(--olive-green-color);
+}
+
+/* Animación sutil de flotación */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 /* Responsive */
@@ -52,7 +74,7 @@
 
   .icon {
     grid-row: 2;
-    font-size: 3rem;
+    font-size: 5rem;
     margin-top: 0.5rem;
   }
 }

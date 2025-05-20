@@ -1,8 +1,8 @@
-import CardInfo from "../home/CardInfo/CardInfo";
-import Contact from "../home/Contact/Contact";
-import ImgProfile from "../home/ImgProfile/ImgProfile";
-import InfoProfile from "../home/InfoProfile/InfoProfile";
-import Typewriter from "../home/Typewriter/Typewriter";
+import CardInfo from "../CardInfo/CardInfo";
+import Contact from "../Contact/Contact";
+import ImgProfile from "../ImgProfile/ImgProfile";
+import InfoProfile from "../InfoProfile/InfoProfile";
+import Typewriter from "../Typewriter/Typewriter";
 import styles from "./BentoContainer.module.css";
 
 export const BentoContainer: React.FC = () => {

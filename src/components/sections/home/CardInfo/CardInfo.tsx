@@ -21,7 +21,7 @@ const CardInfo: React.FC<CardInfoProps> = ({
       <div className={styles.cardInner}>
         <div className={styles.cardFront}>
           <img src={imageSrc} alt={title} className={styles.image} />
-          <h3 className={styles.title}>{title}</h3>
+          <h3 className={styles.titleFront}>{title}</h3>
         </div>
 
         <div className={styles.cardBack}>

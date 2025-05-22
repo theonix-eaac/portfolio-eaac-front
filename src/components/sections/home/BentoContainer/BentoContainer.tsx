@@ -31,6 +31,7 @@ export const BentoContainer: React.FC = () => {
             title="Software"
             description="Aquí podrás encontrar lo relacionado con el desarrollo de software"
             imageSrc="/CardInfo/Software.webp"
+            linkHref="/software"
           />
         </div>
         <div className={`${styles.item4} ${styles.item}`}>
@@ -38,6 +39,7 @@ export const BentoContainer: React.FC = () => {
             title="Ciencia"
             description="Aquí podrás encontrar lo relacionado con la investigación"
             imageSrc="/CardInfo/Ciencia.webp"
+            linkHref="/ciencia"
           />
         </div>
         <div className={`${styles.item5} ${styles.item}`}>
@@ -45,6 +47,7 @@ export const BentoContainer: React.FC = () => {
             title="Blog"
             description="Un poco de divulgación de contenido"
             imageSrc="/CardInfo/Blog.webp"
+            linkHref="/blog"
           />
         </div>
 

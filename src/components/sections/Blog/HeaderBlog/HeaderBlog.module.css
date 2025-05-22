@@ -1,0 +1,20 @@
+.header {
+  background-color: var(--forest-green-color);
+  color: var(--text-light);
+}
+
+.logo {
+  font-family: var(--font-playfair);
+  color: var(--text-ivory);
+}
+
+.navLink {
+  font-family: var(--font-inter);
+  color: var(--text-light);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: var(--olive-green-color);
+}

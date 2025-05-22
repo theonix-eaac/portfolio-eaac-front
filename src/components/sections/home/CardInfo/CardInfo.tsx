@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./CardInfo.module.css";
-
 interface CardInfoProps {
   title: string;
   description: string;

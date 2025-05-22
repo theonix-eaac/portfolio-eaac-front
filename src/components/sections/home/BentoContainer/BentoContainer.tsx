@@ -3,6 +3,7 @@ import Contact from "../Contact/Contact";
 import ImgProfile from "../ImgProfile/ImgProfile";
 import InfoProfile from "../InfoProfile/InfoProfile";
 import Typewriter from "../Typewriter/Typewriter";
+
 import styles from "./BentoContainer.module.css";
 
 export const BentoContainer: React.FC = () => {
@@ -16,7 +17,7 @@ export const BentoContainer: React.FC = () => {
 
       <div className={`${styles.grid}`}>
         <div className={`${styles.item0} ${styles.item}`}>
-          <ImgProfile />{" "}
+          <ImgProfile />
         </div>
 
         <div className={`${styles.item1} ${styles.item}`}>

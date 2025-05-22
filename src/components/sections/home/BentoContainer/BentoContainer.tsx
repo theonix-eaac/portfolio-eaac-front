@@ -3,7 +3,6 @@ import Contact from "../Contact/Contact";
 import ImgProfile from "../ImgProfile/ImgProfile";
 import InfoProfile from "../InfoProfile/InfoProfile";
 import Typewriter from "../Typewriter/Typewriter";
-
 import styles from "./BentoContainer.module.css";
 
 export const BentoContainer: React.FC = () => {

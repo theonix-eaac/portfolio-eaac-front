@@ -17,11 +17,11 @@ export default function NavbarGlobal() {
   }, []);
 
   const navItems = [
-    { label: "Inicio", href: "#inicio" },
-    { label: "Software", href: "#software" },
-    { label: "Ciencia", href: "#ciencia" },
-    { label: "Blog", href: "#blog" },
-    { label: "Contacto", href: "#contacto" },
+    { label: "Inicio", href: "/" },
+    { label: "Software", href: "/|software" },
+    { label: "Ciencia", href: "/ciencia" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contacto", href: "/contacto" },
   ];
 
   return (

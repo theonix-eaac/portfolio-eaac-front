@@ -1,8 +1,8 @@
-import CardInfo from "../home/CardInfo/CardInfo";
-import Contact from "../home/Contact/Contact";
-import ImgProfile from "../home/ImgProfile/ImgProfile";
-import InfoProfile from "../home/InfoProfile/InfoProfile";
-import Typewriter from "../home/Typewriter/Typewriter";
+import CardInfo from "../Home/CardInfo/CardInfo";
+import Contact from "../Home/Contact/Contact";
+import ImgProfile from "../Home/ImgProfile/ImgProfile";
+import InfoProfile from "../Home/InfoProfile/InfoProfile";
+import Typewriter from "../Home/Typewriter/Typewriter";
 import styles from "./BentoContainer.module.css";
 
 export const BentoContainer: React.FC = () => {
@@ -24,6 +24,7 @@ export const BentoContainer: React.FC = () => {
           title="Software"
           description="Aquí podrás encontrar lo relacionado con el desarrollo de software"
           imageSrc="/CardInfo/Software.webp"
+          linkHref="/software"
         />
       </div>
       <div className={`${styles.item4} ${styles.item}`}>
@@ -31,6 +32,7 @@ export const BentoContainer: React.FC = () => {
           title="Ciencia"
           description="Aquí podrás encontrar lo relacionado con la investigación"
           imageSrc="/CardInfo/Ciencia.webp"
+          linkHref="/ciencia"
         />
       </div>
       <div className={`${styles.item5} ${styles.item}`}>
@@ -38,6 +40,7 @@ export const BentoContainer: React.FC = () => {
           title="Blog"
           description="Un poco de divulgación de contenido"
           imageSrc="/CardInfo/Blog.webp"
+          linkHref="/blog"
         />
       </div>
 

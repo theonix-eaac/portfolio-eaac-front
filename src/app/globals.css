@@ -6,6 +6,12 @@
   --earth-green-color: #5c734e;
   --black-warm: #121212;
 
+  --forest-green-rgba: rgba(42, 64, 45, 0.2);
+  --olive-green-rgba: rgba(138, 153, 104, 0.2);
+  --brush-green-rgba: rgba(55, 79, 52, 0.2);
+  --moss-green-rgba: rgba(108, 131, 84, 0.2);
+  --earth-green-rgba: rgba(92, 115, 78, 0.2);
+
   /*Text*/
   --text-light: #f5f5f5;
   --text-soft-gray: #dadada;

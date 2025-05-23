@@ -61,10 +61,12 @@ export default function Typewriter() {
         </p>
       ) : (
         <h2 className={styles.textFixed}>
-        ¡Hey! Qué gusto tenerte por aquí.
-        <span>Ojalá conectemos, colaboremos o incluso construyamos algo grande juntos.</span>
-      </h2>
-      
+          ¡Hey! Qué gusto tenerte por aquí.
+          <span>
+            Ojalá conectemos, colaboremos o incluso construyamos algo grande
+            juntos.
+          </span>
+        </h2>
       )}
     </div>
   );

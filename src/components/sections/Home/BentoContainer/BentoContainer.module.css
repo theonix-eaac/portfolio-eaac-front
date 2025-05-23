@@ -95,10 +95,12 @@
   background: linear-gradient(
     135deg,
     var(--moss-green-color),
-    
+
     rgba(255, 255, 255, 0.08)
   );
 }
+
+
 .item3 {
   background: linear-gradient(
     135deg,
